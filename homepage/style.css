@@ -1,0 +1,47 @@
+#bio {
+    background-color: #E8D7FF;
+    width: 90%;
+    font-size: 2em;
+    margin-left: 20px;
+    padding: 1em;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0D0628;
+}
+header, main, footer {
+    background-color: #A9FBD7;
+    margin: 10px;
+    padding: 15px;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+.myinfo {
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid #0D0628;
+    padding-bottom: 35px;
+}
+.myinfo img {
+    width: 10em;
+}
+#projects {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5em;
+}
+.projectlist {
+    display: flex;
+    flex-direction: column;
+}
+a:link, a:visited, a:focus, a:hover, a:active {
+    color: #717C89;
+}
