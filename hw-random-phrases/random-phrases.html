@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Phrases</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="phraseGenerator">
+        <header>
+            <h1>Here is a piece of advice from Gon and Killua!</h1>
+        </header>
+        <main>
+            <p>Placeholder</p>
+            <h2>Generate Advice</h2>
+        </main>
+        <footer>
+            <h3>Copyright 2021 Marcelo Leal Faria</h3>
+        </footer>
+    </div>
+</body>
+<script>
+    let phrases = [
+        "There are two things that collectors always want. The first as an item of extreme rarity. The second is colleagues to whom they can brag about their collection.",
+        "If you want to get to know someone, find out what makes them angry.",
+        "If I ignore a friend I have the ability to help, wouldn’t I be betraying him?",
+        "An apology is a promise to do things differently next time, and to keep the promise.",
+        "In the hands of an incompetent, power brings nothing but ruin.",
+        "You should enjoy the little detours to the fullest. Because that's where you'll find things more important than what you want." 
+    ]
+    let p = document.querySelector("p");
+    let button = document.querySelector("h2");
+    window.onload = function(){
+        p.innerHTML = phrases[Math.floor(Math.random() * 6)]
+    }
+
+    button.onclick = function(){
+        p.innerHTML = phrases[Math.floor(Math.random() * 6)]
+    }
+
+
+        
+</script>
+</html>

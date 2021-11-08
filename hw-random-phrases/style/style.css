@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #006400;
+    background-image: url("../media/background.png");
+    background-size: 5vw;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+#phraseGenerator{
+    background-image: url("../media/hunterpedia.png");
+    background-size: 50vw;
+    width: 50vw;
+    height: 28vw;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 8vw;
+    border: solid 0.5vw black;
+}
+
+header {
+    align-self: center;
+    color: lawngreen;
+    background-color: rgb(170, 139, 99);
+    padding: 0 1vw;
+    border: solid 0.5vw grey;
+    border-radius: 0.5vw;
+    width: 40vw;
+    font-size: 0.8vw;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.7vw;
+    width: 40vw;
+    height: 9.5vw;
+    background-color: #ffffffdd;
+    border: solid 0.5vw rgb(170, 139, 99);
+    text-align: center;
+}
+
+h2 {
+    cursor: pointer;
+    background-color: rgb(165, 22, 22);
+    padding: 1vw;
+    border-radius: 1vw;
+    margin-bottom: -8vw;
+    margin-top: -1vw;
+    width: 10vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+h2:hover {
+    background-color: rgb(33, 33, 199);
+    transform: scale(1.05);
+}
+
+h2:active {
+    transform: scale(0.95);
+}
+
+footer {
+    align-self: center;
+    color: white;
+    margin-top: 8vw;
+    font-size: 1vw;
+}

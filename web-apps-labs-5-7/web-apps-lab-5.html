@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps-5</title>
+	<style>
+		body{
+			font-family:sans-serif;
+		}
+		#colorform{
+			background-color:#dfecdf;
+			color: #111;
+			padding:1em;width:400px;
+		}
+		#colorform p#info{
+			background-color:white;
+			color: black;
+			width:300px;
+			height:100px;
+			padding:.5em;
+		}
+		
+		#colorform legend{ 
+			font-weight:bold;
+			font-size:1.2em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="colorform">
+	<legend>Choose your favorite color!</legend>
+	<p><input type="radio" name="colorGroup" id="colorGroupRed" value="red" /> Red</p>
+	<p><input type="radio" name="colorGroup" id="colorGroupGreen" value="green" /> Green</p>
+	<p><input type="radio" name="colorGroup" id="colorGroupBlue" value="blue" /> Blue</p>
+	<p><button id="colorButton" type="button">Submit</button></p>
+	<p id="info"></p>
+</div>
+
+<script>
+    let colorForm = document.querySelector("#colorform");
+    let red = document.getElementById("colorGroupRed");
+    let green = document.getElementById("colorGroupGreen");
+    let blue = document.getElementById("colorGroupBlue");
+    let submitButton = document.querySelector("#colorButton");
+    let info = document.querySelector("#info");
+    let chosenColor;
+
+    red.onchange = let = (e) => {
+        chosenColor = e.target.value;
+        info.innerHTML = "Your choice is \"" + chosenColor + "\"!";
+    }
+    green.onchange = let = (e) => {
+        chosenColor = e.target.value;
+        info.innerHTML = "Your choice is \"" + chosenColor + "\"!";
+    }
+    blue.onchange = let = (e) => {
+        chosenColor = e.target.value;
+        info.innerHTML = "Your choice is \"" + chosenColor + "\"!";
+    }
+
+    submitButton.onclick = function(){
+        info.innerHTML = "Your FINAL CHOICE is \"" + chosenColor + "\"!";
+    }
+    
+
+</script>
+</body>
+</html>

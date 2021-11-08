@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'dogicaregular';
+    src: url('Fonts/dogica-webfont.woff2') format('woff2'),
+         url('Fonts/dogica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dogicabold';
+    src: url('Fonts/dogicabold-webfont.woff2') format('woff2'),
+         url('Fonts/dogicabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dogica_pixelregular';
+    src: url('Fonts/dogicapixel-webfont.woff2') format('woff2'),
+         url('Fonts/dogicapixel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dogica_pixelbold';
+    src: url('Fonts/dogicapixelbold-webfont.woff2') format('woff2'),
+         url('Fonts/dogicapixelbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'retro_computerregular';
+    src: url('Fonts/retro_computer_personal_use-webfont.woff2') format('woff2'),
+         url('Fonts/retro_computer_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: dogica_pixelregular;
+    margin: 0 0 0 0;
+    background-color: #35363D;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    font-family: retro_computerregular;
+}
+
+header {
+    background-color: #686868;
+    display: flex;
+    flex-direction: row;
+    padding: 1vh 7.2vw;
+    line-height: 10px;
+    font-size: 1vw;
+}
+
+.myInfo{
+    text-align: right;
+    font-family: retro_computerregular;
+    color: #ffffff;
+    margin-left: auto;
+    line-height: 1.5em;
+}
+
+header img {
+    width: 2em;
+    margin-left: 1vw;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(103%) contrast(108%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#oakInfo {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 527px;
+    margin: 2em auto 5em;
+    display: flex;
+    justify-content: center;
+}
+
+#oakImage, #oakText {
+    margin: 1em;
+}
+
+#oakImage {
+    border: solid white 0.4em;
+    background-image: linear-gradient(to bottom right, #E8FDF5, #244d3e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+    height: 75h;
+    padding: 0 3vw 1.3vw;
+}
+
+#oakImage img {
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#oakText {
+    background-color: #686868;
+    display: flex;
+    padding: 0 3vw 1.3vw;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1vw;
+    line-height: 3vh;
+    height: 75vh;
+    width: 35vw;
+}
+
+#valleyImage {
+    width: 99.2vw;
+    height: 90vh;
+}
+
+#blocksInfo {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw;
+    grid-template-areas: 
+    "pimage ptext stiimage stitext"
+    "cimage ctext staimage statext";
+    margin: 1.4em auto 2em;
+}
+
+.blocksInfo {
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.blockImage, .blockText {
+    margin: 1em;
+}
+
+.blockImage {
+    border: solid white 0.4em;
+    background-color: #324e44;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockImage img {
+    width: 10vw;
+    max-width: 10vw;
+}
+
+.blockText {
+    font-size: 1vw;
+    line-height: 2.7vh;
+    text-align: left;
+    padding: 1em;
+    background-color: #686868;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#plankImage {
+    grid-area: "pimage"
+}
+
+#plankText {
+    grid-area: "ptext"
+}
+
+#stickImage {
+    grid-area: "stiimage"
+}
+
+#stickText {
+    grid-area: "stitext"
+}
+
+#chestImage {
+    grid-area: "cimage"
+}
+
+#chestText {
+    grid-area: "ctext"
+}
+
+#stairImage {
+    grid-area: "staimage"
+}
+
+#stairText {
+    grid-area: "statext"
+}
+
+footer {
+    background-image: url("Assets/trees.jpg");
+    background-size:cover;
+    background-position-y: -380px;
+    display: flex;
+    padding: 3vh 10vh;
+    border-top: solid white 0.4em;
+    margin-top: 1em;
+    font-size: 1vw;
+}
+
+#footerTextLeft {
+    text-align: left;
+    line-height: 0.7em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#footerTextRight {
+    text-align: right;
+    margin-left: auto;
+    line-height: 0.7em;
+    margin-top: auto;
+    margin-bottom: auto;
+}

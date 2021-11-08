@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Exo+2:wght@200&display=swap');
+
+body {
+    background-color: #39375B;
+    color: #f7ece1;
+    font-size: 1.3vw;
+    font-family: 'Exo 2', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: #E3B23C;
+    width: 96vw;
+    border-radius: 5px;
+    margin: 2em auto 2em auto;
+}
+
+#aboutMe, .project, footer, #gallery {
+    background-color: #745c97;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+#aboutMe {
+    display: grid;
+    grid-template-columns: 40vw 16vw;
+    grid-template-rows: 5vw 20vw;
+    grid-template-areas:
+    "aboutTitle aboutImage"
+    "aboutText aboutImage";
+    border-radius: 5px;
+    justify-content: space-around;
+    padding: 0 4em 1em 2em;
+    width: 70vw;
+    margin: 0 auto 0 auto;
+}
+
+#aboutMe h2 {
+    grid-area: aboutTitle;
+    text-align: center;
+}
+
+#aboutText {
+    grid-area: aboutText;
+    padding-top: 1em;
+}
+
+#aboutMe img {
+    grid-area: aboutImage;
+    align-self: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 20vw;
+    margin-top: 1em;
+}
+
+#gallery {
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#galleryImages {
+    display: flex;
+    align-content: space-between;
+}
+
+#galleryImages img {
+    width: 20vw;
+    margin: 0 1em;
+    padding-bottom: 1.5em;
+}
+
+#projectShowcase {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: stretch;
+    padding: 3vw;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project .item {
+    margin: 1vh 0;
+}
+
+.project h2 {grid-area: projTitle;}
+
+#text {grid-area: projText;}
+
+.project img {
+    grid-area: projImage;
+    width: 20vw;
+}
+
+.project a {
+    grid-area: projLink;
+    font-size: 1.5vw;
+}
+
+footer {
+    display: flex;
+    font-size: 1.5vw;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    padding-bottom: 2em;
+}
+
+footer a {
+    font-size: 1.5vw;
+    margin-bottom: 1em;
+    margin-top: 0.3em;
+}
+
+#contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    height: 500px;
+    border-width: 0;
+    background-color:#f7ece1;
+    border-radius: 10px
+}
+
+a {
+    font-size: 2.5vw;
+}
+
+a:link {
+    color: #00279b;
+    font-weight: bold;
+}
+
+header a:link {
+    color: #00279b;
+}
+
+a:visited {
+    color: #69140E;
+}
+
+a:focus {
+    color: #2B193D;
+}
+
+a:hover {
+    color: #DDFFF7;
+}
+
+a:active {
+    color: #0A2463;
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 2vw;
+    }
+
+    h1 {font-size: 4vw;}
+    h2 {font-size: 3.5vw;}
+
+    #aboutMe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aboutMe img {
+        width: 40vw;
+    }
+
+    #galleryImages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #galleryImages img {
+        width: 60vw;
+    }
+
+    #projectShowcase {
+        flex-direction: column;
+    }
+
+    .project img {
+        width: 60vw;
+    }
+
+    .project a {font-size: 3vw;}
+    footer a {font-size: 3vw;}
+
+    footer {
+        font-size: 2vw;
+        width: 60vw;
+    }
+
+    #contact {
+        width: 60vw;
+    }
+}
